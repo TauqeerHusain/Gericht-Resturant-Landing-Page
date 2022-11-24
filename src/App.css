@@ -32,10 +32,12 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .section__padding {
   padding: 4rem 6rem;
 }
@@ -103,7 +105,14 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all .2s;
 }
+
+.custom__button:hover {
+  background-color: var(--color-golden);
+
+}
+
 
 .p__cormorant {
   font-family: var(--font-base);
@@ -140,6 +149,7 @@
 }
 
 @media screen and (min-width: 2000px) {
+
   .custom__button,
   .p__cormorant {
     font-size: 37px;
